@@ -19,4 +19,7 @@ app.get("/:shortId", async (req, res) => {
   res.redirect(enrty.redirectUrl);
 });
 
-app.listen(8001);
+app.listen(()=>
+{
+    console.log("listening on port 5000");
+})
