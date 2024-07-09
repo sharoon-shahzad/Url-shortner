@@ -19,7 +19,14 @@ app.get("/:shortId", async (req, res) => {
   res.redirect(enrty.redirectUrl);
 });
 
-app.listen(()=>
+app.listen((error)=>
 {
-    console.log("listening on port 5000");
+    if(error)
+    {
+        console.log(error);
+    }
+    else
+    {
+        console.log("server is running on port 3000");
+    }
 })
